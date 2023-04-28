@@ -1,0 +1,263 @@
+.container {
+    max-width: 1000px;
+}
+
+.footer {
+    background: grey;
+    text-align: center;
+    padding: 20px 0;
+    &-text {
+        a {color:white;text-decoration: none;}
+        p {color:white;margin: 0;}
+    }
+
+    &-light {
+        footer {
+            background: white;
+            a,p {color:black !important;}
+        }
+    }
+}
+
+.carousel {
+
+    &-main &-item {
+        height: calc(100vh - 50px);
+        min-height: 500px;
+        background-position: center bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &-portfoolio &-item {
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+
+    &-control-prev, &-control-next {opacity: 1;}
+
+    &-icon {
+        background: grey;
+        display: block;
+        width: 50px;
+        height: 50px;
+        font-weight: bold;
+        background-image: url('../images/arrow.png');
+
+        &.next {
+            transform: rotate(180deg);
+        }
+    }
+
+    &-controls {
+        padding-top: 60px;
+        img {
+            margin-bottom: 30px;
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.navbar {
+    min-height: 50px;
+    background: grey;
+
+    a {
+        color:white;
+
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 800px;
+        width: 100%;
+    }
+
+
+    &-toggler {
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin: 10px 0;
+        box-shadow: none !important;
+        border:none !important;
+        margin-left: 4px;
+
+        &:not(.collapsed) {
+            .bar {
+                &-1 {transform: rotate(45deg);top:50%;}
+                &-2 {transform: scale(0);}
+                &-3 {transform: rotate(-45deg);top:50%;}
+            }
+        }
+    }
+    .bar {
+        width: 100%;
+        height: 2px;
+        background: white;
+        position: absolute;
+        left: 0;
+        transition: .2s;
+
+        &-1 {
+            top: 0px;
+        }
+
+        &-2 {
+            top:50%;
+        }
+
+        &-3 {
+            top:100%;
+        }
+    }
+}
+
+.meist {
+    padding-top: 80px;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    p {
+        font-weight: 500;
+    }
+
+    .vaartused {
+        padding-top: 80px;
+
+        h5 {
+            padding-bottom: 20px;
+        }
+
+        li {
+            list-style-type: none;
+            padding-bottom: 20px;
+            font-weight: 500;
+        }
+    }
+
+    .image {
+        img {
+            max-width: 500px;
+            width:100%;
+                height:100%;
+                object-fit:cover;
+        }
+    }
+}
+
+.portfoolio {
+    padding-top: 80px;
+}
+
+.teenused {
+    padding-top: 80px;
+
+    &-item {
+        max-width: 400px;
+        padding-bottom: 40px;
+        &-image {
+            margin-bottom: 30px;
+            height:250px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        &-title {
+            h5 {
+                color:white;
+                background: grey;
+                padding: 10px;
+            }
+        }
+
+        &-text {
+            padding-top: 20px;
+            p {
+                font-weight: 500;
+            }
+        }
+    }
+
+    &-hinnad {
+        padding-bottom: 50px;
+
+        &-table {
+            table,th,td {border:1px solid black; border-collapse:collapse;width: 100%;padding: 10px;font-weight: 500;}
+        }
+    }
+}
+
+.meedia {
+    padding-top: 80px;
+
+    &-viideo {
+        position: relative;
+        width: calc(100%);
+        height: 0;
+        padding-bottom: 56.25%;
+        margin-bottom: 20px;
+
+        iframe {
+            position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+        }
+    }
+}
+
+.kontakt {
+    padding-top: 80px;
+    &-kaart {
+        padding-bottom: 30px;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &-form {
+        padding: 50px 0 100px;
+
+        input:not(.submit), textarea{
+            width: 100%;
+            border:none;
+            border-bottom: 1px solid black;
+            outline: none;
+            margin: 15px 0;
+        }
+
+        textarea {
+            border:1px solid black;
+            min-height: 100px;
+            padding: 5px;
+        }
+
+        .submit {
+            background: grey;
+            color:white;
+            border: none;
+            outline: none;
+            padding: 10px 30px;
+            border-radius: 10px;
+            text-align-last: left;
+        }
+    }
+
+    &-image {
+        img {width: 100%;}
+    }
+}

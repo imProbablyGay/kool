@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="styles/style.css" rel="stylesheet">
+
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>main</title>
+<style>
+body{padding-top:50px;} 
+</style>
+<script>
+$(document).ready(function(){   $("#navkoht").load("nav.html");   });
+$(document).ready(function(){   $("#footerkoht").load("footer.html");   });
+</script>
+</head>
+<body>
+<div id="navkoht"></div>
+
+<div class="kontakt">
+<div class="container">
+    <div class="row">
+        <div class="col-12 kontakt-kaart">
+            <img src="/images/kaart.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="footerkoht" class="footer-light"></div>
+
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <form action="" class="kontakt-form">
+                <input required type="text" placeholder="Sinu nimi"><br>
+                <input required type="email" placeholder="Sinu e-post"><br>
+                <input required type="tel" placeholder="Sinu telefon"><br>
+                <textarea required placeholder="Sõnum"></textarea><br>
+                <input class="submit" type="submit" value="SAADA">
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="kontakt-image">
+    <img src="/images/tooliga footer.jpg" alt="">
+</div>
+</body>

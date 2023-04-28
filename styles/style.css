@@ -1,0 +1,237 @@
+.container {
+  max-width: 1000px;
+}
+
+.footer {
+  background: grey;
+  text-align: center;
+  padding: 20px 0;
+}
+.footer-text a {
+  color: white;
+  text-decoration: none;
+}
+.footer-text p {
+  color: white;
+  margin: 0;
+}
+.footer-light footer {
+  background: white;
+}
+.footer-light footer a, .footer-light footer p {
+  color: black !important;
+}
+
+.carousel-main .carousel-item {
+  height: calc(100vh - 50px);
+  min-height: 500px;
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.carousel-portfoolio .carousel-item img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.carousel-control-prev, .carousel-control-next {
+  opacity: 1;
+}
+.carousel-icon {
+  background: grey;
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  background-image: url("../images/arrow.png");
+}
+.carousel-icon.next {
+  transform: rotate(180deg);
+}
+.carousel-controls {
+  padding-top: 60px;
+}
+.carousel-controls img {
+  margin-bottom: 30px;
+  display: block;
+  width: 100%;
+}
+
+.navbar {
+  min-height: 50px;
+  background: grey;
+}
+.navbar a {
+  color: white;
+}
+.navbar a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+}
+.navbar-toggler {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  margin: 10px 0;
+  box-shadow: none !important;
+  border: none !important;
+  margin-left: 4px;
+}
+.navbar-toggler:not(.collapsed) .bar-1 {
+  transform: rotate(45deg);
+  top: 50%;
+}
+.navbar-toggler:not(.collapsed) .bar-2 {
+  transform: scale(0);
+}
+.navbar-toggler:not(.collapsed) .bar-3 {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+.navbar .bar {
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: 0;
+  transition: 0.2s;
+}
+.navbar .bar-1 {
+  top: 0px;
+}
+.navbar .bar-2 {
+  top: 50%;
+}
+.navbar .bar-3 {
+  top: 100%;
+}
+
+.meist {
+  padding-top: 80px;
+}
+.meist h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.meist p {
+  font-weight: 500;
+}
+.meist .vaartused {
+  padding-top: 80px;
+}
+.meist .vaartused h5 {
+  padding-bottom: 20px;
+}
+.meist .vaartused li {
+  list-style-type: none;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+.meist .image img {
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfoolio {
+  padding-top: 80px;
+}
+
+.teenused {
+  padding-top: 80px;
+}
+.teenused-item {
+  max-width: 400px;
+  padding-bottom: 40px;
+}
+.teenused-item-image {
+  margin-bottom: 30px;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.teenused-item-title h5 {
+  color: white;
+  background: grey;
+  padding: 10px;
+}
+.teenused-item-text {
+  padding-top: 20px;
+}
+.teenused-item-text p {
+  font-weight: 500;
+}
+.teenused-hinnad {
+  padding-bottom: 50px;
+}
+.teenused-hinnad-table table, .teenused-hinnad-table th, .teenused-hinnad-table td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.meedia {
+  padding-top: 80px;
+}
+.meedia-viideo {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 20px;
+}
+.meedia-viideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.kontakt {
+  padding-top: 80px;
+}
+.kontakt-kaart {
+  padding-bottom: 30px;
+}
+.kontakt-kaart img {
+  max-width: 100%;
+}
+.kontakt-form {
+  padding: 50px 0 100px;
+}
+.kontakt-form input:not(.submit), .kontakt-form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  margin: 15px 0;
+}
+.kontakt-form textarea {
+  border: 1px solid black;
+  min-height: 100px;
+  padding: 5px;
+}
+.kontakt-form .submit {
+  background: grey;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+.kontakt-image img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
