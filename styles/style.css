@@ -60,6 +60,9 @@
   min-height: 50px;
   background: grey;
 }
+.navbar-brand img {
+  height: 40px;
+}
 .navbar a {
   color: white;
 }
